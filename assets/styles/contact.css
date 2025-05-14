@@ -1,0 +1,151 @@
+#contact {
+  height: 100%;
+  background: #121a27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 24px;
+}
+
+#contact h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #FF4655;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: 	#1f2a3c;
+  width: 100%;
+  height: auto;
+  border: 1px solid 	#1f2a3c;
+  padding: 24px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #e1e0e0;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.form-group textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+}
+
+.fullname {
+  display: flex;
+  gap: 10px;
+}
+.form-container {
+  display: flex;
+  align-items: stretch; /* makes both form and image same height */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.form-image {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.form-image img {
+  height: 100%;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain; /* show full image */
+  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+form {
+  flex: 1;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f45059;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+textarea {
+  background-color: #1e293b; 
+  color: #ffffff;
+}
+input {
+  background-color: #1e293b; 
+}
+input:focus {
+  color: #ffffff; 
+  border-color: #f87171;
+  outline: none;
+}
+textarea:focus {
+  color: #ffffff; 
+  border-color: #f87171;
+  outline: none;
+}
+.message {
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column; /* Stack the form and image vertically */
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+
+  .form-image {
+    max-width: 100%; /* Make the image take full width on smaller screens */
+    height: auto;
+  }
+
+  .form-image img {
+    width: 100%; /* Image fills the container's width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px; /* Less padding on very small screens */
+  }
+
+  .form-image {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #contact {
+    display: block;
+  }
+
+  .fullname {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

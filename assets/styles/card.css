@@ -1,0 +1,126 @@
+.card {
+  flex: 0 1 calc(50% - 20px); /* 2 cards per row */
+  background-color: #121a27;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1.0);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-10px);  /* Slight lift effect on hover */
+}
+.card-header h3 {
+  padding: 14px 16px;
+}
+
+.card-header img {
+  width: 100%;
+  object-fit: cover;
+}
+.intro {
+  color: #fb525b;
+  font-size: 20px;
+  font-family: cursive;
+}
+.card-body {
+  padding: 0 16px;
+  background-color: #fb525b;
+}
+
+.card-footer {
+  padding: 14px 16px;
+    background-color: #fb525b;
+}
+.text {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Aclonica";
+  color: #fb525b;
+}
+.boost {
+  text-align: center;
+}
+p {
+  color: white;
+}
+.card-header {
+  background: white; /* or your actual content background */
+  padding: 10px;
+}
+.card-image1 {
+  border-radius: 5px;
+}
+.card-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card img {
+  max-width: 100%; /* Ensure the image fits within the card */
+  border-radius: 5px; /* Optional: Rounds the image corners */
+}
+.container h2 {
+  color: white  ;
+}
+.untro {
+  color: white;
+}
+.phrase {
+  color: rgb(180, 186, 186);
+}
+#second-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 72px 74px;
+  background-color: #121a27;
+}
+
+.third-button:hover {
+  background: #222222;
+}
+.btn-group {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.third-button {
+  color: white;
+  background-color: #FF4655;
+  height: auto; /* Let height grow with content */
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  max-width: 90%;
+  width: auto;
+  display: inline-block;
+  white-space: normal;
+  text-align: center;
+}
+.logo {
+  position: fixed;
+  height: auto;
+  left: 25px;
+  width: 250px;
+  bottom: 469px;
+}
+
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+  .third-button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+} 
+
